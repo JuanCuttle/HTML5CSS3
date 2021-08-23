@@ -19,13 +19,13 @@
     /></a>
 
     <h2>Please fill in the following form:</h2>
-    <form action="/subscribed.html">
+    <form action="/subscribed.html" autocomplete="on">
       <label for="user">Full name</label>
-      <input type="text" id="name" /> <br />
+      <input type="text" id="name" name="fullname" /> <br />
       <label for="user">Username</label>
-      <input type="text" id="user" /><br />
+      <input type="text" id="user" name="username" /><br />
       <label for="password">Password</label>
-      <input type="password" id="password" /> <br />
+      <input type="password" id="password" name="pwd" /> <br />
       <label for="genders">Gender</label>
       <select name="genders" id="genders">
         <option value="M">Male</option>
@@ -35,10 +35,54 @@
       <label for="message" class="feedback"
         >Feel free to write your feedback</label
       >
-      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Type your feedback here"
+      ></textarea>
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>
     </form>
+
+    <h1 id="logo">Logo</h1>
+    <h2>Article</h2>
+
+    <p class="article">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni,
+      dicta adipisci a quas libero commodi totam? Debitis consequatur vero rerum
+      recusandae quia! Tempore, culpa aperiam necessitatibus porro obcaecati
+      minus esse quod doloribus sunt velit, doloremque aliquam quaerat earum
+      possimus eaque blanditiis nobis? Ut, quas rem quis sequi ullam neque.
+    </p>
+
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+      veniam voluptatem ipsum delectus maxime sequi quas cumque tenetur aliquid
+      vel!
+    </p>
+
+    <ol>
+      <li>Ordered list (O.L.)</li>
+      <li>List Item (L.I.)</li>
+    </ol>
+    <ul>
+      <li>Unordered List (U.L.)</li>
+      <li>Also list item</li>
+    </ul>
+    <table>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Dough</td>
+        <th>35</th>
+      </tr>
+    </table>
     <!--     <img
       width="300 "
       src="/images/pexels-charles-parker-5847383.jpg"
