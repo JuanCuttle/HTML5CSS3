@@ -9,3 +9,29 @@ a.UnityLink {
 label.feedback {
   display: block;
 }
+
+/* Selects by class */
+article {
+  color: darkorchid;
+}
+
+/* Selects by id */
+#logo {
+  font-size: 50px;
+  color: royalblue;
+}
+
+/* Selects ALL the elements */
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Selects the p directly below an h2 */
+h2 + p {
+  color: brown;
+}
+
+/* Selects the li's with an ul parent */
+ul > li {
+  color: crimson;
+}
