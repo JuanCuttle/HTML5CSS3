@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1.UnityHeader {
   color: blueviolet;
 }
@@ -31,7 +37,15 @@ h2 + p {
   color: brown;
 }
 
-/* Selects the li's with an ul parent */
+/* Selects the li's with a ul parent */
 ul > li {
   color: crimson;
+}
+
+#submit {
+  padding: 100px 50px 25px 10px;
+}
+
+#reset {
+  margin: 100px;
 }
