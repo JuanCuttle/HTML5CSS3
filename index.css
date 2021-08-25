@@ -50,9 +50,9 @@ ul > li {
   margin: 2rem;
 }
 
-html {
-  /* font-size: 62.5%; */
-}
+/* html {
+    font-size: 62.5%;
+} */
 
 button {
   margin: 2rem;
@@ -67,10 +67,45 @@ button {
   background-color: burlywood;
 }
 
-a {
+figure.building {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+footer.foot {
+  margin: auto;
   display: block;
   text-align: center;
 }
-figure {
+
+.container {
+  background: blue;
+  height: 100%;
+  width: 80%;
   margin: auto;
+  padding: 7.5%;
+}
+
+.box1,
+.box2,
+.box3 {
+  width: 20%;
+  height: 20%;
+  padding: 5%;
+}
+
+.box1 {
+  background: cadetblue;
+  position: absolute;
+  transform: translate(50%, -100%);
+}
+
+.box2 {
+  background: brown;
+}
+
+.box3 {
+  background: blanchedalmond;
 }
