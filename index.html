@@ -10,47 +10,68 @@
     <link rel="icon" href="/images/unity-logo.png" />
   </head>
   <body>
-    <h1 class="UnityHeader">
-      Unity3D is the best software for designing games there is. Here is the
-      link to it:
-    </h1>
-    <a class="UnityLink" href="https://unity.com/" target="_blank"
-      ><img src="/images/unity-logo-full.jpg" alt="Unity logo" width="200px"
-    /></a>
+    <header>
+      <nav class="header">
+        <h1 class="UnityHeader">
+          Unity3D is the best software for designing games there is. Here is the
+          link to it:
+        </h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <header>
+        <h2>Game development</h2>
+        <h3>Develop games with Unity3D</h3>
+        <a class="UnityLink" href="https://unity.com/" target="_blank"
+          ><img
+            src="/images/unity-logo-full.jpg"
+            alt="Unity logo"
+            width="200px"
+        /></a>
+      </header>
+    </section>
+    <section class="form-section">
+      <header>
+        <h2>Please fill in the following form:</h2>
+        <form action="/subscribed.html" autocomplete="on">
+          <label for="user">Full name</label>
+          <input type="text" id="name" name="fullname" /> <br />
+          <label for="user">Username</label>
+          <input type="text" id="user" name="username" /><br />
+          <label for="password">Password</label>
+          <input type="password" id="password" name="pwd" /> <br />
+          <label for="genders">Gender</label>
+          <select name="genders" id="genders">
+            <option value="M">Male</option>
+            <option value="F">Female</option></select
+          ><br />
+          <br />
+          <label for="message" class="feedback"
+            >Feel free to write your feedback</label
+          >
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Type your feedback here"
+          ></textarea>
+          <button type="submit" id="submit">Submit</button>
+          <button type="reset" id="reset">Reset</button>
+        </form>
+      </header>
+    </section>
 
     <div class="container">
       <div class="box1"></div>
       <div class="box2"></div>
       <div class="box3"></div>
     </div>
-
-    <h2>Please fill in the following form:</h2>
-    <form action="/subscribed.html" autocomplete="on">
-      <label for="user">Full name</label>
-      <input type="text" id="name" name="fullname" /> <br />
-      <label for="user">Username</label>
-      <input type="text" id="user" name="username" /><br />
-      <label for="password">Password</label>
-      <input type="password" id="password" name="pwd" /> <br />
-      <label for="genders">Gender</label>
-      <select name="genders" id="genders">
-        <option value="M">Male</option>
-        <option value="F">Female</option></select
-      ><br />
-      <br />
-      <label for="message" class="feedback"
-        >Feel free to write your feedback</label
-      >
-      <textarea
-        name="message"
-        id="message"
-        cols="30"
-        rows="10"
-        placeholder="Type your feedback here"
-      ></textarea>
-      <button type="submit" id="submit">Submit</button>
-      <button type="reset" id="reset">Reset</button>
-    </form>
 
     <article>
       <h1 id="logo">Logo</h1>

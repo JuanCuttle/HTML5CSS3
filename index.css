@@ -1,20 +1,14 @@
+/* Selects ALL the elements */
 * {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1.UnityHeader {
-  color: blueviolet;
-}
-
-a.UnityLink {
-  font-size: xx-large;
-}
-
-label.feedback {
-  display: block;
-}
+/* html {
+    font-size: 62.5%;
+} */
 
 /* Selects by class */
 article {
@@ -27,11 +21,6 @@ article {
   color: royalblue;
 }
 
-/* Selects ALL the elements */
-* {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
 /* Selects the p directly below an h2 */
 h2 + p {
   color: brown;
@@ -42,6 +31,19 @@ ul > li {
   color: crimson;
 }
 
+h1.UnityHeader {
+  color: blueviolet;
+  text-shadow: 3px 3px 3px black;
+}
+
+a.UnityLink {
+  font-size: xx-large;
+}
+
+label.feedback {
+  display: block;
+}
+
 #submit {
   padding: 100px 50px 25px 10px;
 }
@@ -49,10 +51,6 @@ ul > li {
 #reset {
   margin: 2rem;
 }
-
-/* html {
-    font-size: 62.5%;
-} */
 
 button {
   margin: 2rem;
@@ -65,6 +63,7 @@ button {
   border-top-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   background-color: burlywood;
+  cursor: pointer;
 }
 
 figure.building {
@@ -86,6 +85,7 @@ footer.foot {
   width: 80%;
   margin: auto;
   padding: 7.5%;
+  position: relative;
 }
 
 .box1,
@@ -99,13 +99,85 @@ footer.foot {
 .box1 {
   background: cadetblue;
   position: absolute;
-  transform: translate(50%, -100%);
+  top: 0%;
+  right: 0%;
+  /* transform: translate(50%, -100%); */
 }
 
 .box2 {
   background: brown;
+  position: sticky;
+  top: 0%;
 }
 
 .box3 {
   background: blanchedalmond;
+}
+
+button:hover {
+  background: wheat;
+}
+
+input:focus {
+  cursor: text;
+}
+
+h1::after {
+  content: "css";
+}
+
+.clear {
+  clear: both;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav.header {
+  background: lightsalmon;
+  padding: 2rem;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+  margin: 0rem 4rem;
+}
+
+.hero-section {
+  background-image: url("/images/pexels-eva-elijas-5978265.jpg");
+  height: 10rem;
+  background-position: right;
+  background-size: cover;
+  text-align: center;
+  color: yellow;
+  text-shadow: 3px 3px 3px black;
+}
+
+.form-section {
+  text-align: center;
+}
+
+form input,
+form label,
+form textarea {
+  display: block;
+  font-size: 1rem;
+}
+
+form input,
+form textarea {
+  margin: auto;
+  width: 30%;
+}
+
+form button {
+  margin: 3rem;
 }
